@@ -4,20 +4,6 @@ html, body{
   width: 100%;
 }
 
-
-@media  (min-device-width: 1201px) {
-  .content {width: 1088px;}
- }
-@media screen and (device-width: 992px) {
-  .content {width: 816px;}
- }
-@media screen and (device-width: 767px) {
-  .content {width: 544px;}
- }
-@media screen and (max-device-width: 766px) {
-  .content {width: 300px;}
- }
-
  .content{
   margin: 0 auto;
   padding: 0;
@@ -27,8 +13,20 @@ html, body{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+  max-width: 1088px;
 }
-
+@media screen and (max-width: 767px) {
+  .content {
+    width: 300px;
+    justify-content: center;
+  }
+ }
+ @media (min-width: 768px) and (max-width: 992px) {
+  .content {width: 544px;}
+ }
+@media (min-width: 993px) and (max-width: 1200px) {
+  .content {width: 816px;}
+ }
 
 .item{
   width: 250px;
@@ -36,7 +34,7 @@ html, body{
   font-size: 4em;
   font-family: Arial, Helvetica, sans-serif;
   color: #4f0183;
-  border: 1px solid black;
+  border: 1px solid #000000;
   margin: 10px;
   padding: 0;
   background-color: #f5f5f5;
@@ -51,12 +49,16 @@ html, body{
 .item_pic:hover{
   width: 120px;
   height: 120px;
-  transition: 0.5s;
   margin: 0;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .name{
-  color: darkblue;
+  color: #7556ff;
 }
 .catrgory{
   font: 2em #a37474 normal;
@@ -65,7 +67,7 @@ html, body{
   text-align: left;
 }
 .price{
-  color: green;
+  color: #008000;
 }
 .description{
   text-align: justify;
