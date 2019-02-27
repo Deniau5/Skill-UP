@@ -18,8 +18,7 @@ html, body{
 @media screen and (max-width: 767px) {
   .content {
     width: 300px;
-    justify-content: center;
-  }
+    justify-content: center;}
  }
  @media (min-width: 768px) and (max-width: 992px) {
   .content {width: 544px;}
@@ -30,8 +29,7 @@ html, body{
 
 .item{
   width: 250px;
-  height: 300px;
-  font-size: 4em;
+  height: 350px;
   font-family: Arial, Helvetica, sans-serif;
   color: #4f0183;
   border: 1px solid #000000;
@@ -56,18 +54,55 @@ html, body{
   -o-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
+.text{
+  width: 250px;
+  height:50%;
+  display: block;
+  text-decoration: none;
+  margin: 0 auto;
+  padding:0;
+  text-align: left;
 
-.name{
-  color: #7556ff;
 }
-.catrgory{
-  font: 2em #a37474 normal;
+p{
+  line-height: 20px;
+  font-size: 14px;
+  padding: 0 10px;
+  margin:0;
+}
+.name a{
+  color: #7556ff;
+  font: normal 14px arial, sans-serif;
+  line-height: 15px;
+}
+.name{
+  word-wrap: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 20px;
+}
+.name:hover{
+  margin-bottom: 0px;
+  white-space: normal;
+  text-overflow: clip;
+}
+.name:hover > a{
+  color: red;
+}
+.category{
+  font-size: 12px;
 }
 .quality{
   text-align: left;
+  width: 60px;
+  height: 15px;
+  padding: 0 10px;
 }
 .price{
   color: #008000;
+  font-weight: bold;
+  font-size: 20px;
 }
 .description{
   text-align: justify;
