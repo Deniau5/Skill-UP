@@ -1,0 +1,23 @@
+html, body{
+  background-color: #aed3f7;
+  text-align: center;
+  width: 100%;
+}
+
+ .content{
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-color: #ffc5c5;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 1088px;
+}
+p{
+  line-height: 20px;
+  font-size: 14px;
+  padding: 0 10px;
+  margin:0;
+}
